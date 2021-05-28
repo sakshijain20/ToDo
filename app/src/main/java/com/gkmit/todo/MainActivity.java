@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<String> taskList = new ArrayList<>();
         dbHelper = new DatabaseHelper(MainActivity.this);
         SQLiteDatabase sqLiteDatabase = dbHelper.getReadableDatabase();
-        
+
         Cursor cursor = sqLiteDatabase.query(dbHelper.TABLE_NAME,
                 new String[]{dbHelper._ID, dbHelper.COL1_TASK},
                 null, null, null, null, null);
